@@ -6,10 +6,10 @@ import { Container, Nav, Navbar } from 'react-bootstrap'
 const Header = () => {
     return (
         <header>
-            <Navbar className="navbar" bg='light' variant='light' expand='lg' collapseOnSelect>
+            <Navbar className="navbar fixed-top" bg='light' variant='light' expand='lg' collapseOnSelect>
             <Container>
                 <LinkContainer to='/'>
-                <Navbar.Brand>INDUVET</Navbar.Brand>
+                <Navbar.Brand><strong>I N D U V E T</strong></Navbar.Brand>
                 </LinkContainer>
                 <Navbar.Toggle aria-controls='basic-navbar-nav'/>
                 <Navbar.Collapse id='basic-navbar-nav'>

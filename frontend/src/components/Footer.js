@@ -3,13 +3,37 @@ import { Container, Row, Col } from 'react-bootstrap'
 
 const Footer = () => {
     return (
-        <footer>       
-            <Container>
+        <footer className="font-small pt-4 mt-5">
+            <Container fluid className="text-center text-md-left">
                 <Row>
-                    <Col className="text-center py-3">Industria Veterinaria S. de R.L. de C.V. Derechos Reservados 2021 &copy;</Col>
+                    <Col md="6">
+                        <h5 className="title">INDUVET</h5>
+                        <p className="lead text-dark">
+                        Productos veterinarios de la mejor calidad.
+                        </p>
+                    </Col>
+                    <Col md="6">
+                        <h5 className="title">Contactanos</h5>
+                        <ul>
+                            <li className="list-unstyled">
+                                <a href="#!" className="text-dark font-weight-bold"> <i className="fab fa-facebook"></i> Facebook</a>
+                            </li>
+                            <li className="list-unstyled">
+                                <a href="#!" className="text-dark font-weight-bold"> <i className="fab fa-instagram"></i> Instagram</a>
+                            </li>
+                            <li className="list-unstyled">
+                                <a href="#!" className="text-dark font-weight-bold"> <i className="fab fa-twitter"></i> Twitter</a>
+                            </li>
+                        </ul>
+                    </Col>
                 </Row>
             </Container>
-        </footer>     
+            <div className="footer-copyright text-center py-3">
+            <Container fluid>
+                {new Date().getFullYear()} Industria Veterinaria S. de R.L. Derechos Reservados &copy;
+            </Container>
+            </div>
+            </footer>     
     )
 }
 
