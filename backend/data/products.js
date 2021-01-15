@@ -1,6 +1,5 @@
 const products = [
     {
-        _id: 'bravecto112',
         name: 'Bravecto 112.5mg',
         image: '/images/Bravecto112.5.jpg',
         description:
@@ -13,7 +12,6 @@ const products = [
         numReviews: 4
     },
     {
-        _id: 'bravecto250',
         name: 'Bravecto 250mg',
         image: '/images/Bravecto250.jpg',
         description:
@@ -26,7 +24,6 @@ const products = [
         numReviews: 4
     },
     {
-        _id: 'bravecto500',
         name: 'Bravecto 500mg',
         image: '/images/Bravecto500.jpg',
         description:
@@ -39,7 +36,6 @@ const products = [
         numReviews: 4
     },
     {
-        _id: 'bravecto1000',
         name: 'Bravecto 1000mg',
         image: '/images/Bravecto1000.jpg',
         description:
@@ -52,7 +48,6 @@ const products = [
         numReviews: 4
     },
     {
-        _id: 'bravecto1400',
         name: 'Bravecto 1400mg',
         image: '/images/Bravecto1400.jpg',
         description:
