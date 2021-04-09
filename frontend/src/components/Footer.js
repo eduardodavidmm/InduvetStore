@@ -14,17 +14,6 @@ const Footer = () => {
                     </Col>
                     <Col md="6">
                         <h5 className="title">Contactanos</h5>
-                        <ul>
-                            <li className="list-unstyled">
-                                <a href="#!" className="text-dark font-weight-bold"> <i className="fab fa-facebook"></i> Facebook</a>
-                            </li>
-                            <li className="list-unstyled">
-                                <a href="#!" className="text-dark font-weight-bold"> <i className="fab fa-instagram"></i> Instagram</a>
-                            </li>
-                            <li className="list-unstyled">
-                                <a href="#!" className="text-dark font-weight-bold"> <i className="fab fa-twitter"></i> Twitter</a>
-                            </li>
-                        </ul>
                     </Col>
                 </Row>
             </Container>
