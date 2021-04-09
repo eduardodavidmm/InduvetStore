@@ -10,7 +10,7 @@ import Message from '../components/Message'
 
 const ProductScreen = ({ history, match }) => {
 
-    const [qty, setQty] = useState(0)
+    const [qty, setQty] = useState(1)
     
     const dispatch = useDispatch()
 
@@ -38,7 +38,7 @@ const ProductScreen = ({ history, match }) => {
                         <h2>{product.name}</h2>
                     </ListGroup.Item>
                     <ListGroup.Item>
-                        Precio: Lps. {product.price}
+                        Precio: Lps. {product.price}.00
                     </ListGroup.Item>
                     <ListGroup.Item>
                         Descripción: {product.description}
@@ -52,7 +52,7 @@ const ProductScreen = ({ history, match }) => {
                                 <Row>
                                     <Col>Precio:</Col>
                                     <Col>
-                                        <strong>Lps. {product.price}</strong>
+                                        <strong>Lps. {product.price}.00</strong>
                                     </Col>
                                 </Row>
                             </ListGroup.Item>
