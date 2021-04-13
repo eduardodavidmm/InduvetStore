@@ -41,13 +41,13 @@ const CartScreen = ({ match, location, history }) => {
                             <ListGroup.Item key={item.product}>
                                 <Row>
                                     <Col md={2}>
-                                        <Image src={item.image} alt={item.name} fluid rounded />
+                                        <Image src={item.image} alt={item.name} fluid roundedCircle />
                                     </Col>
                                     <Col md={3}>
                                         <Link to ={`/product/${item.product}`}>{item.name}</Link>
                                     </Col>
                                     <Col md={2}>
-                                        Lps. {item.price}
+                                        Lps. {item.price}.00
                                     </Col>
                                     <Col md={2}>
                                     <Form.Control as='select' value={item.qty} onChange={(e) => dispatch(addToCart(item.product, Number(e.target.value)))}>

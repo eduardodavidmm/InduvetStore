@@ -1,15 +1,18 @@
 import React from 'react'
-import { LinkContainer } from 'react-router-bootstrap'
+import { LinkContainer, Link } from 'react-router-bootstrap'
 import { Container, Nav, Navbar } from 'react-bootstrap'
 // import NavbarToggle from 'react-bootstrap/esm/NavbarToggle'
+import Logo from '../images/induvet.png'
 
 const Header = () => {
     return (
         <header>
-            <Navbar className="navbar fixed-top" bg='light' variant='light' expand='lg' collapseOnSelect>
+            <Navbar className="navbar fixed-top mb-6" bg='light' variant='light' expand='lg' collapseOnSelect>
             <Container>
                 <LinkContainer to='/'>
-                <Navbar.Brand><strong>I N D U V E T</strong></Navbar.Brand>
+                <Navbar.Brand>
+                    <img width="60px" height="auto" className="img-responsive" src={Logo}  alt="logo" />
+                </Navbar.Brand>
                 </LinkContainer>
                 <Navbar.Toggle aria-controls='basic-navbar-nav'/>
                 <Navbar.Collapse id='basic-navbar-nav'>
