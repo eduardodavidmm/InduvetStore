@@ -1,5 +1,5 @@
 import React from 'react'
-import { LinkContainer, Link } from 'react-router-bootstrap'
+import { LinkContainer } from 'react-router-bootstrap'
 import { Container, Nav, Navbar } from 'react-bootstrap'
 // import NavbarToggle from 'react-bootstrap/esm/NavbarToggle'
 import Logo from '../images/induvet.png'
