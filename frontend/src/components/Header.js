@@ -1,10 +1,21 @@
 import React from 'react'
+import { useDispatch, useSelector } from 'react-redux'
 import { LinkContainer } from 'react-router-bootstrap'
-import { Container, Nav, Navbar } from 'react-bootstrap'
-// import NavbarToggle from 'react-bootstrap/esm/NavbarToggle'
+import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap'
 import Logo from '../images/induvet.png'
+import { logout } from '../actions/userActions'
 
 const Header = () => {
+
+    const dispatch = useDispatch()
+
+    const userLogin = useSelector(state => state.userLogin)
+    const { userInfo } = userLogin
+
+    const logoutHandler = () => {
+        dispatch(logout())
+    }
+
     return (
         <header>
             <Navbar className="navbar fixed-top mb-6" bg='light' variant='light' expand='lg' collapseOnSelect>
@@ -20,9 +31,18 @@ const Header = () => {
                         <LinkContainer to='/cart'>
                         <Nav.Link><i className='fas fa-cart-plus'></i> Compras</Nav.Link>
                         </LinkContainer>
+                        {userInfo ? (
+                            <NavDropdown title={userInfo.name} id='username'>
+                                <LinkContainer to='profile'>
+                                    <NavDropdown.Item>Perfil</NavDropdown.Item>
+                                </LinkContainer>
+                                <NavDropdown.Item onClick={logoutHandler}>Cerrar Sesión</NavDropdown.Item>
+                            </NavDropdown>
+                        ) : 
                         <LinkContainer to='/login'>
                         <Nav.Link><i className='fas fa-user'></i> Iniciar Sesion</Nav.Link>
-                        </LinkContainer>
+                        </LinkContainer>}
+                        
                     </Nav>
                 </Navbar.Collapse>
             </Container>
