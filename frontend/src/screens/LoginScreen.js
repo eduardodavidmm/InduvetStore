@@ -9,8 +9,8 @@ import { login } from '../actions/userActions'
 
 const LoginScreen = ({ location, history }) => {
 
-    const [email, setEmail] = useState(' ')
-    const [password, setPassword] = useState(' ')
+    const [email, setEmail] = useState('')
+    const [password, setPassword] = useState('')
 
     const dispatch = useDispatch()
 
@@ -41,10 +41,10 @@ const LoginScreen = ({ location, history }) => {
                    <Form.Label>Correo Electronico</Form.Label>
                    <Form.Control type='email' placeholder='Ingrese Correo Electronico' value={email} onChange={(e) => setEmail(e.target.value)}></Form.Control>
                </Form.Group>
-               
+        
                <Form.Group controlId='password'>
                    <Form.Label>Contraseña</Form.Label>
-                   <Form.Control type='password' placeholder="Ingrese Contraseña" value={password} onChange={(e) => setPassword(e.target.value)}></Form.Control>
+                   <Form.Control type='password' placeholder='Ingrese Contraseña' value={password} onChange={(e) => setPassword(e.target.value)}></Form.Control>
                </Form.Group>
 
                <center><Button type='submit' variant='primary'>
