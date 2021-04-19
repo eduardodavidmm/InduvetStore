@@ -9,12 +9,12 @@ import { login } from '../actions/userActions'
 
 const LoginScreen = ({ location, history }) => {
 
-    const [ email, setEmail ] = useState(' ')
-    const [ password, setPassword ] = useState(' ')
+    const [email, setEmail] = useState(' ')
+    const [password, setPassword] = useState(' ')
 
     const dispatch = useDispatch()
 
-    const userLogin = useSelector(state => state.userLogin)
+    const userLogin = useSelector((state) => state.userLogin)
     const { loading, error, userInfo } = userLogin
 
     const redirect = location.search ? location.search.split('=')[1] : '/'
@@ -32,22 +32,25 @@ const LoginScreen = ({ location, history }) => {
 
     return (
         <FormContainer>
-            <h1 className="mt-5">Registro de Usuario</h1>
+            <h1 className="mt-5">Inicio de Sesión</h1>
             {error && <Message variant='danger'>{error}</Message>}
-            {loading && <Loader/>}
+            {loading && <Loader />}
+            
             <Form onSubmit={submitHandler}>
                <Form.Group controlId='email'>
                    <Form.Label>Correo Electronico</Form.Label>
                    <Form.Control type='email' placeholder='Ingrese Correo Electronico' value={email} onChange={(e) => setEmail(e.target.value)}></Form.Control>
                </Form.Group>
+               
                <Form.Group controlId='password'>
                    <Form.Label>Contraseña</Form.Label>
-                   <Form.Control type='password' placeholder='Ingrese Contraseña' value={password} onChange={(e) => setPassword(e.target.value)}></Form.Control>
+                   <Form.Control type='password' placeholder="Ingrese Contraseña" value={password} onChange={(e) => setPassword(e.target.value)}></Form.Control>
                </Form.Group>
 
-               <Button type='submit' variant='primary'>
+               <center><Button type='submit' variant='primary'>
                     Ingresar
                </Button>
+               </center>
             </Form>
 
             <Row className='py-3'>

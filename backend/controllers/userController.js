@@ -2,15 +2,15 @@ import asyncHandler from 'express-async-handler'
 import generateToken from '../utils/generateToken.js'
 import User from '../models/userModel.js'
 
-// @desc Fetch all Users
+// @desc Auth User y Token
 // @route GET /api/users/login
 // @access Public
-const authUser = asyncHandler( async (req, res) => {
+const authUser = asyncHandler(async (req, res) => {
     const { email, password } = req.body
 
     const user = await User.findOne({ email })
 
-    if(user && (await user.matchPassword(password))) {
+    if (user && (await user.matchPassword(password))) {
         res.json({
             _id: user._id,
             name: user.name,
@@ -27,11 +27,12 @@ const authUser = asyncHandler( async (req, res) => {
 // @desc Get User Profile
 // @route GET /api/users/login
 // @access Public
-const getUserProfile = asyncHandler( async (req, res) => {
+const getUserProfile = asyncHandler(async (req, res) => {
+    
     const user = await User.findById(req.user._id)
 
-    if(user) {
-        _res.json({
+    if (user) {
+        res.json({
             _id: user._id,
             name: user.name,
             email: user.email,
@@ -39,7 +40,7 @@ const getUserProfile = asyncHandler( async (req, res) => {
         })
     } else {
         res.status(404)
-        throw new Error ('Usuario no encontrado')
+        throw new Error('Usuario no encontrado')
     }
 })
 
@@ -62,7 +63,7 @@ const registerUser = asyncHandler( async (req, res) => {
         password
     })
 
-    if(user) {
+    if (user) {
         res.status(201).json({
             _id: user._id,
             name: user.name,
