@@ -34,7 +34,7 @@ const CartScreen = ({ match, location, history }) => {
     return (
         <Row>
             <Col md={8}>
-                <h1 className="mt-5">Carrito de Compras</h1>
+                <h1 className="mtopone">Carrito de Compras</h1>
                 {cartItems.length === 0 ? <Message>No tienes articulos en la Orden <Link to='/'> Regresar a La Tienda </Link> </Message> : (
                     <ListGroup variant='flush'>
                         {cartItems.map(item => (
@@ -70,7 +70,7 @@ const CartScreen = ({ match, location, history }) => {
                 )}
             </Col>
             <Col md={4}>
-                <Card className="mt-5">
+                <Card className="mtopone">
                     <ListGroup variant='flush'>
                         <ListGroup.Item>
                             <h2>Subtotal ({cartItems.reduce((acc, item) => acc + item.qty, 0)}) Productos </h2>

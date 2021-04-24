@@ -49,7 +49,7 @@ const ProfileScreen = ({ location, history }) => {
 
     return( <Row>
         <Col md={3}>
-        <h2 className="mt-5">Perfil del Usuario</h2>
+        <h2 className="mtopone">Perfil del Usuario</h2>
             {message && <Message variant='danger'>{message}</Message>}
             {error && <Message variant='danger'>{error}</Message>}
             {success && <Message variant='success'>Perfil Actualizado</Message>}

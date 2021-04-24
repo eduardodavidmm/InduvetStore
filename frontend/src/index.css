@@ -19,5 +19,32 @@ h2 {
 }
 
 .navbar {
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.6);
+  position: fixed;
+}
+
+.cardproduct {
+  border: none;
+}
+
+.center {
+  text-align: center;
+}
+
+.mtopone {
+  margin-top: 60px !important;
+}
+
+.btn {
+  font-weight: 400;
+}
+
+.nameproduct {
+  text-align: center;
+  text-decoration: none !important;
+  text-decoration-line: none !important;
+}
+
+.nameproduct:hover {
+  color: #000;
 }

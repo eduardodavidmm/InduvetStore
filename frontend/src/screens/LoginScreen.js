@@ -32,7 +32,7 @@ const LoginScreen = ({ location, history }) => {
 
     return (
         <FormContainer>
-            <h1 className="mt-5">Inicio de Sesión</h1>
+            <h1 className="mtopone">Inicio de Sesión</h1>
             {error && <Message variant='danger'>{error}</Message>}
             {loading && <Loader />}
             

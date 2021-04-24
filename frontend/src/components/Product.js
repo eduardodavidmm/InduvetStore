@@ -4,20 +4,20 @@ import { Card } from 'react-bootstrap'
 
 const Product = ({product}) => {
     return (
-        <Card className="my-3 p-3 rounded">
+        <Card className="my-3 p-3 rounded cardproduct">
             <Link to={`/product/${product._id}`}>
                 <Card.Img src={product.image} variant='top' />
             </Link>
 
             <Card.Body>
-                <Link to={`/product/${product._id}`}>
-                    <Card.Title as='h5'>
+                <Link className="nameproduct text-success" to={`/product/${product._id}`}>
+                    <Card.Title className="center">
                         {product.name}
                     </Card.Title>
                 </Link>
 
-                <Card.Text as='h5'>
-                    Lps.{product.price}
+                <Card.Text as='h6' className="center">
+                    Lps. {product.price}.00
                 </Card.Text>
             </Card.Body>
         </Card>
