@@ -15,10 +15,9 @@ const orderSchema = mongoose.Schema({
             price: { type: Number, required: true},
             Product:{
                 type: mongoose.Schema.Types.ObjectId,
-                required: true,
                 ref: 'Product'
             },
-        }
+        },
     ],
     shippingAddress: {
         address: { type: String, required: true },
@@ -35,11 +34,6 @@ const orderSchema = mongoose.Schema({
         status: { type: String },
         update_time: { type: String },
         email_address: { type: String },
-    },
-    taxPrice: {
-        type: Number,
-        required: true,
-        default: 0.0
     },
     shippingPrice: {
         type: Number,

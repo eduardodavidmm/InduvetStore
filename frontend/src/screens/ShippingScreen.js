@@ -39,7 +39,7 @@ const ShippingScreen = ({ history }) => {
 
             <Form.Group controlId='city'>
                    <Form.Label>Ciudad / Departamento</Form.Label>
-                   <Form.Control type='city' required placeholder='Ingrese Su Ciudad' value={city} onChange={(e) => setCity(e.target.value)}></Form.Control>
+                   <Form.Control type='city' placeholder='Ingrese Su Ciudad' value={city} onChange={(e) => setCity(e.target.value)}></Form.Control>
             </Form.Group>
 
             <Form.Group controlId='phone'>
