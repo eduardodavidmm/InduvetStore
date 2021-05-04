@@ -48,3 +48,18 @@ h2 {
 .nameproduct:hover {
   color: #000;
 }
+
+.footer {
+  background-color: #e5eef3;
+  color: #073852;
+}
+
+.footer__icon {
+  font-size: 2rem;
+  color: #000;
+  margin: 4rem 2rem;
+}
+
+.footersocial {
+  margin-bottom: 2em;
+}

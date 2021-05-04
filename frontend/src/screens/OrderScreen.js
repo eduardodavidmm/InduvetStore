@@ -51,7 +51,6 @@ const OrderScreen = ({ match }) => {
                             <strong>Paga con: </strong>
                             {order.paymentMethod}
                         </div>
-                        {order.isPaid ? <Message variant='success'>Pagado en {order.paidAt}</Message> : <Message variant='danger'>Pago Pendiente</Message>}
                     </ListGroup.Item>
 
                     <ListGroup.Item>
