@@ -35,6 +35,7 @@ const UserEditScreen = ({ match, history }) => {
                 setName(user.name)
                 setEmail(user.email)
                 setIsAdmin(user.isAdmin)
+                
                }
         }
     }, [dispatch, history, userId, user, successUpdate])
