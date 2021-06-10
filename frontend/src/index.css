@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+  font-family: 'Lato', sans-serif;
+}
+
 main {
   min-height: 80vh;
 }
@@ -18,6 +24,10 @@ h2 {
   text-align: center;
 }
 
+.lead {
+  color: #000;
+}
+
 .navbar {
   box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.4);
   position: fixed;
@@ -33,6 +43,17 @@ h2 {
 
 .mtopone {
   margin-top: 60px !important;
+}
+
+.mtoptwo {
+  margin-top: 150px !important;
+}
+
+.leadtag {
+  text-align: left;
+  color: #165dc6;
+  font-weight: 900 !important;
+  font-size: 2.9em;
 }
 
 .btn {
