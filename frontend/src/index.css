@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
 
 * {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 main {
@@ -26,6 +26,7 @@ h2 {
 
 .lead {
   color: #000;
+  font-size: 1.1em;
 }
 
 .navbar {
@@ -42,18 +43,18 @@ h2 {
 }
 
 .mtopone {
-  margin-top: 60px !important;
+  margin-top: 70px !important;
 }
 
 .mtoptwo {
-  margin-top: 150px !important;
+  margin-top: 70px !important;
 }
 
 .leadtag {
   text-align: left;
   color: #165dc6;
   font-weight: 900 !important;
-  font-size: 2.9em;
+  font-size: 3.5em;
 }
 
 .btn {
